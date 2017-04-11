@@ -1,7 +1,7 @@
 ﻿# Личный проект «Нёрдс»
 
 * Студент: [Полина Борисова](https://up.htmlacademy.ru/htmlcss/17/user/211133).
-* Наставник:[Наталья Налимова](https://up.htmlacademy.ru/htmlcss/17/user/16507).
+* Наставник:[Наталья ▲ Налимова](https://up.htmlacademy.ru/htmlcss/17/user/16507).
 
 ---
 
