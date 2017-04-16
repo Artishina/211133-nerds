@@ -2,163 +2,165 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-	<title>Магазин</title>
+	  <title>Магазин</title>
   </head>
   <body>
-    <header class="main-header catalog">
+    <header class="main-header">
       <div class="container">
-        <div class="logo">
+        <div class="main-header-logo">
           <a href="index.html">
-            <img class="logo-img" src="http://placehold.it/150x100" alt="Nerds" width="150" height="100">
+            <img class="main-header-logo-img" src="http://placehold.it/150x100" alt="Nerds" width="150" height="100">
           </a>
         </div>
-        <nav class="main-menu">
-          <ul class="menu-list">
-            <li>
-              <a href="#" title="Студия">Студия</a>
+        <nav>
+          <ul class="main-header-navigation">
+            <li class="main-header-navigation-single">
+              <a class="main-header-navigation-link" href="#" title="Студия">Студия</a>
             </li>
-            <li>
-              <a href="#" title="Клиенты">Клиенты</a>
+            <li class="main-header-list-single">
+              <a class="main-header-navigation-link" href="#" title="Клиенты">Клиенты</a>
             </li>
-            <li>
-              <a href="catalog.html" title="Магазин" class="current">Магазин</a>
+            <li class="main-header-list-single">
+              <a class="main-header-navigation-link" href="#" title="Магазин">Магазин</a>
             </li>
-            <li>
-              <a href="#" title="Контакты">Контакты</a>
+            <li class="main-header-list-single">
+              <a class="main-header-navigation-link" href="#" title="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="trash">
-          <a class="trashbox" href="#">Корзина</a>
+          <a class="trash-trashbox" href="#">Корзина</a>
         </div>
       </div>
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <h1 class="main-header-title">Магазин готовых шаблонов</h1>
     </header>
-    
     <main class="container">
       <div class="catalog-column">
         <div class="catalog-column-left">
-          <form action="" method="post">
-            <div class="catalog-column-left-price">
-      	      <h3 class="catalog-column-left-title">Стоимость:</h3>
-      	      <label for="from">от</label>
-              <input id="from" type="text" name="from" value="0">
-              <label for="to">до</label>
-              <input id="to" type="text" name="to" value="15000">
-            </div>
-            <div class="catalog-column-left-net">
-              <h3 class="catalog-column-left-title">Сетка:</h3>
-              <label class="catalog-column-left-label" for="adaptive">Адаптивная</label>
-              <input id="adaptive" type="radio" name="net" value="adaptive" checked>
-              <label class="catalog-column-left-label" for="fixed">Фиксированная</label>
-              <input id="fixed" type="radio" name="net" value="fixed">
-              <label class="catalog-column-left-label" for="rubber">Резиновая</label>
-              <input id="rubber" type="radio" name="net" value="rubber">
-            </div>
-            <div class="catalog-column-left-features">
-              <h3 class="catalog-column-left-title">Особенности</h3>
-              <label for="slider">Слайдер</label>
-              <input id="slider" type="checkbox" name="slider" value="slider" checked>
-              <label for="advantages">Блок преимуществ</label>
-              <input id="advantages" type="checkbox" name="advantages" value="advantages">
-              <label for="news">Новости</label>
-              <input id="news" type="checkbox" name="news" value="news" checked>
-              <label for="gallery">Галерея</label>
-              <input id="gallery" type="checkbox" name="gallery" value="gallery">
-              <label for="trashbox">Корзина</label>
-              <input id="trashbox" type="checkbox" name="trashbox" value="trashbox">
-            </div>
-            <div class="catalog-column-left-btn">
+          <form action="post" method="post">
+            <fieldset class="catalog-column-left-price">
+      	      <legend class="catalog-column-left-title">Стоимость:</legend>
+      	      <label class="catalog-column-left-price-label" for="from">от</label>
+              <input class="catalog-column-left-price-input" id="from" type="text" name="from" value="0">
+              <label class="catalog-column-left-price-label" for="to">до</label>
+              <input class="catalog-column-left-price-input" id="to" type="text" name="to" value="15000">
+            </fieldset>
+            <fieldset class="catalog-column-left-net">
+              <legend class="catalog-column-left-title">Сетка:</legend>
+              <label class="catalog-column-left-net-label" for="adaptive">Адаптивная</label>
+              <input class="catalog-column-left-net-input" id="adaptive" type="radio" name="net" value="adaptive" checked>
+              <label class="catalog-column-left-net-label" for="fixed">Фиксированная</label>
+              <input class="catalog-column-left-net-input" id="fixed" type="radio" name="net" value="fixed">
+              <label class="catalog-column-left-net-label" for="rubber">Резиновая</label>
+              <input class="catalog-column-left-net-input" id="rubber" type="radio" name="net" value="rubber">
+            </fieldset>
+            <fieldset class="catalog-column-left-features">
+              <legend class="catalog-column-left-title">Особенности</legend>
+              <label class="catalog-column-left-features-label" for="slider">Слайдер</label>
+              <input class="catalog-column-left-features-input" id="slider" type="checkbox" name="slider" value="slider" checked>
+              <label class="catalog-column-left-features-label" for="advantages">Блок преимуществ</label>
+              <input class="catalog-column-left-features-input" id="advantages" type="checkbox" name="advantages" value="advantages">
+              <label class="catalog-column-left-features-label" for="news">Новости</label>
+              <input class="catalog-column-left-features-input" id="news" type="checkbox" name="news" value="news" checked>
+              <label class="catalog-column-left-features-label" for="gallery">Галерея</label>
+              <input class="catalog-column-left-features-input" id="gallery" type="checkbox" name="gallery" value="gallery">
+              <label class="catalog-column-left-features-label" for="trashbox">Корзина
+              </label>
+              <input class="catalog-column-left-features-input" id="trashbox" type="checkbox" name="trashbox" value="trashbox">
+            </fieldset>
+            <fieldset class="catalog-column-left-btn">
               <button type="submit" class="btn catalog-column-left-btn">Показать</button>
-            </div>
+            </fieldset>
           </form>
         </div>
         <div class="catalog-column-right">
-          <div class="catalog-sort">
-            <span class="catalog-sort-title">Сортировать:</span>
-            <a href="#" class="catalog-sort-option">По цене</a>
-            <a href="#" class="catalog-sort-option">По типу</a>
-            <a href="#" class="catalog-sort-option">По названию</a>
+          <div class="catalog-sort-column">
+            <div class="catalog-sort-column-left">
+              <h3 class="catalog-sort-title">Сортировать:</h3>
+            </div>
+            <div class="catalog-sort-column-right">  
+              <a href="#" class="catalog-sort-option catalog-option-active">По цене</a>
+              <a href="#" class="catalog-sort-option catalog-option-inactive">По типу</a>
+              <a href="#" class="catalog-sort-option catalog-option-inactive">По названию</a>
+            </div>  
           </div>
           <div class="catalog-block">
             <a href="#" class="catalog-item">
-              <figure class="catalog-img">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="sedona">
-              </figure>
+              <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="sedona">
               <div class="catalog-item-block">
-                <h3 class="catalog-item-title">Sedona</h3>
-                <p class="catalog-item-info">Информационный сайт для туристов</p>
-                <p class="catalog-item-btn">9 900 руб.</p>
+               <h3 class="catalog-item-block-title">Sedona</h3>
+               <p class="catalog-item-block-info">Информационный сайт для туристов</p>
+               <p class="catalog-item-block-btn">9 900 руб.</p>
               </div>
             </a>
             <a href="#" class="catalog-item">
-              <figure class="catalog-img">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="pink">
-              </figure>
+              <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="pink">
               <div class="catalog-item-block">
-                <h3 class="catalog-item-title">Pink</h3>
-                <p class="catalog-item-info"></p>
-                <p class="catalog-item-btn"></p>
+                <h3 class="catalog-item-block-title">Pink</h3>
+                <p class="catalog-item-block-info"></p>
+                <p class="catalog-item-block-btn"></p>
               </div>
             </a>
             <a href="#" class="catalog-item">
-              <figure class="catalog-img">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="barbershop">
-              </figure>
+              <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="barbershop">
               <div class="catalog-item-block">
-                <h3 class="catalog-item-title">Barbershop</h3>
-                <p class="catalog-item-info"></p>
-                <p class="catalog-item-btn"></p>
+                <h3 class="catalog-item-block-title">Barbershop</h3>
+                <p class="catalog-item-block-info"></p>
+                <p class="catalog-item-block-btn"></p>
               </div>
             </a>
             <a href="#" class="catalog-item">
-              <figure class="catalog-img">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="mishka">
-              </figure>
+              <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="mishka">
               <div class="catalog-item-block">
-                <h3 class="catalog-item-title">Mishka</h3>
-                <p class="catalog-item-info"></p>
-                <p class="catalog-item-btn"></p>
+                <h3 class="catalog-item-block-title">Mishka</h3>
+                <p class="catalog-item-block-info"></p>
+                <p class="catalog-item-block-btn"></p>
               </div>
             </a>
             <a href="#" class="catalog-item">
-              <figure class="catalog-img">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="a">
-              </figure>
+              <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="a">
               <div class="catalog-item-block">
-                <h3 class="catalog-item-title">A</h3>
-                <p class="catalog-item-info"></p>
-                <p class="catalog-item-btn"></p>
+                <h3 class="catalog-item-block-title">A</h3>
+                <p class="catalog-item-block-info"></p>
+                <p class="catalog-item-block-btn"></p>
               </div>
             </a>
             <a href="#" class="catalog-item">
-              <figure class="catalog-img">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Кваст">
-              </figure>
+              <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="Кваст">
               <div class="catalog-item-block">
-                <h3 class="catalog-item-title">Кваст</h3>
-                <p class="catalog-item-info"></p>
-                <p class="catalog-item-btn"></p>
+                <h3 class="catalog-item-block-title">Кваст</h3>
+                <p class="catalog-item-block-info"></p>
+                <p class="catalog-item-block-btn"></p>
               </div>
             </a>
           </div>
         </div>
-        <div class="catalog-pages">
-          <span class="catalog-pages-active">1</span>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#" class="catalog-pages-next">Следующая</a>
+        <div class="catalog-pager">
+          <ul class="catalog-pager-list">
+          <li class="catalog-pager-list-sigle">
+            <a class="catalog-page catalog-page-active">1</a>
+          </li>
+          <li class="catalog-pager-list-sigle">
+            <a class="catalog-page catalog-page-inactive" href="#">2</a>
+          </li>
+          <li class="catalog-pager-list-sigle">
+            <a class="catalog-page catalog-page-inactive" href="#">3</a>
+          </li>
+          <li class="catalog-pager-list-sigle">  
+            <a class="catalog-page catalog-page-inactive" href="#">Следующая</a>
+          </li>
+        </ul>
         </div>  
       </div>     	
     </main>
-    
     <footer class="main-footer">
+       <div class="container">
        <div class="map">
          <div class="contacts">
            <h3 class="contacts-title">Nerds design studio</h3>
            <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
            <p class="contacts-info">тел. +7 (812) 275-75-75</p>
-           <a href="#" class="footer-btn-contacts">Напишите нам</a>
+           <a href="#" class="contacts-btn">Напишите нам</a>
          </div>
        </div>
        <div class="bottom-footer">
@@ -166,11 +168,12 @@
            <a href="#" class="footer-btn-vk">vk</a>
            <a href="#" class="footer-btn-fb">fb</a>
            <a href="#" class="footer-btn-inst">inst</a>
-       	 </div>
-       	 <div class="bottom-footer-right">
-           <h2 class="bottom-footer-title">Давайте дружить, это выгодно!</h2>
-           <p bottom-footer-info>Скидка 10% для друзей из социальных сетей.</p>
-       	 </div>
+         </div>
+         <div class="bottom-footer-right">
+           <h2 class="bottom-footer-right-title">Давайте дружить, это выгодно!</h2>
+           <p class="bottom-footer-info">Скидка 10% для друзей из социальных сетей.</p>
+         </div>
+       </div>
        </div>
      </footer>
   </body>

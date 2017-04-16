@@ -7,122 +7,140 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="logo">
+        <div class="main-header-logo">
           <a href="index.html">
-            <img class="logo-img" src="http://placehold.it/150x100" alt="Nerds" width="150" height="100">
+            <img class="main-header-logo-img" src="http://placehold.it/150x100" alt="Nerds" width="150" height="100">
           </a>
         </div>
-        <nav class="main-menu">
-          <ul class="menu-list">
-            <li>
-              <a href="#" title="Студия">Студия</a>
+        <nav>
+          <ul class="main-header-navigation">
+            <li class="main-header-navigation-single">
+              <a class="main-header-navigation-link" href="#" title="Студия">Студия</a>
             </li>
-            <li>
-              <a href="#" title="Клиенты">Клиенты</a>
+            <li class="main-header-list-single">
+              <a class="main-header-navigation-link" href="#" title="Клиенты">Клиенты</a>
             </li>
-            <li>
-              <a href="#" title="Магазин">Магазин</a>
+            <li class="main-header-list-single">
+              <a class="main-header-navigation-link" href="#" title="Магазин">Магазин</a>
             </li>
-            <li>
-              <a href="#" title="Контакты">Контакты</a>
+            <li class="main-header-list-single">
+              <a class="main-header-navigation-link" href="#" title="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="trash">
-          <a class="trashbox" href="#">Корзина</a>
+          <a class="trash-trashbox" href="#">Корзина</a>
         </div>
-      </div>
-       <section>
-         <h2>Долго, дорого, скурпулезно</h2>
-         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-         <a href="#" class="btn">Узнать больше</a>
-       </section>
-         <div class="slider">
-           <label for="slider-1"></label>
-           <input type="radio" id="slider-1" class="slider-1" name="slider1" checked>
-           <label for="slider-2"></label>
-           <input type="radio" id="slider-2" class="slider-2" name="slider1">
-           <label for="slider-3"></label>
-           <input type="radio" id="slider-3" class="slider-3" name="slider1">
+        <div class="slider">
+        <div class="slider-info-1">
+         <h2 class="slider-info-title">Долго, дорого, скурпулезно</h2>
+         <p class="slider-info-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+         <a href="#" class="slider-info-btn">Узнать больше</a>
+       </div>
+       <div class="slider-info-2">
+         <h2 class="slider-info-title">Любим математику как никто другой</h2>
+         <p class="slider-info-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+         <a href="#" class="slider-info-btn">Узнать больше</a>
+       </div>
+       <div class="slider-info-3">
+         <h2 class="slider-info-title">Только ночь, только хардкор</h2>
+         <p class="slider-info-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+         <a href="#" class="slider-info-btn">Узнать больше</a>
+       </div>
+       <form action="post" method="post">
+         <div class="slider-form">
+           <label class="slider-label" for="slider-1"></label>
+           <input type="radio" id="slider-1" class="slider-input" name="slider1" checked>
+           <label class="slider-label" for="slider-2"></label>
+           <input type="radio" id="slider-2" class="slider-input" name="slider1">
+           <label class="slider-label" for="slider-3"></label>
+           <input type="radio" id="slider-3" class="slider-input" name="slider1">
          </div>
+       </form> 
+       </div>
+       </div>  
      </header>
-     
      <main class="container">
-       <section class="offer">
-         <article class="offer-item">
+       <div class="offer">
+         <article class="offer-item-1">
            <img class="offer-item-img" src="http://placehold.it/150x100" alt="Веб-сайты" width="150" height="100">
-           <h2>Веб-сайты</h2>
-           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-           <a href="#" class="btn-offer-1">Заказать</a>
+           <h2 class="offer-item-title">Веб-сайты</h2>
+           <p class="offer-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+           <a href="#" class="offer-item-btn-1">Заказать</a>
          </article>
-         <article class="offer-item">
+         <article class="offer-item-2">
            <img class="offer-item-img" src="http://placehold.it/150x100" alt="Приложения" width="150" height="100">
-           <h2>Приложения</h2>
-           <p>Покорите топ-10 приложений в Appstore и Google Play</p>
-           <a href="#" class="btn-offer-2">Заказать</a>
+           <h2 class="offer-item-title">Приложения</h2>
+           <p class="offer-item-text">Покорите топ-10 приложений в Appstore и Google Play</p>
+           <a href="#" class="offer-item-btn-2">Заказать</a>
          </article>
-         <article class="offer-item">
+         <article class="offer-item-3">
            <img class="offer-item-img" src="http://placehold.it/150x100" alt="Презентации" width="150" height="100">
-           <h2>Презентации</h2>
-           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-           <a href="#" class="btn-offer-3">Заказать</a>
+           <h2 class="offer-item-title">Презентации</h2>
+           <p class="offer-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+           <a href="#" class="offer-item-btn-3">Заказать</a>
          </article>
-       </section>
-       <div class="info">
-         <div class="info-left">
-           <h2 class="info-title">
+       </div>
+       <div class="info-column">
+         <div class="info-column-left">
+           <h2 class="info-column-left-title">
            	Мы маленькая, но гордая дизайн-студия из Краснодара
            </h2>
-           <p class="info-detail-1">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работает не покладая рук, как роботы.
+           <p class="info-column-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работает не покладая рук, как роботы.
            </p>	
-           <p class="info-detail-2">Выполняем заказы на разработку:
+           <p class="info-column-left-text-text">Выполняем заказы на разработку:
            </p>
-             <ul class="info-list">
-               <li>Веб-сайтов любой сложности</li>
-               <li>Мобильных приложений для IOS и Android</li>
-               <li>Слайдшоу и видео для корпоративных презентаций</li>
+             <ul class="info-column-left-list">
+               <li class="info-column-left-list-single">Веб-сайтов любой сложности</li>
+               <li class="info-column-left-list-single">Мобильных приложений для IOS и Android</li>
+               <li class="info-column-left-list-single">Слайдшоу и видео для корпоративных презентаций</li>
              </ul>
          </div>
-         <div class="info-right">
+         <div class="info-column-right">
            <img src="http://placehold.it/150x100" alt="Nerds" width="150" height="100">
-           <p class="info-date">С 2004 года мы любим точность во всем:</p>
-            <ul class="info-list">
-                    <li>146% Уровень самоотдачи</li>
-                    <li>100% Соблюдение сроков</li>
-                    <li>50% Минимальная предоплата</li>
+           <p class="info-column-right-date">С 2004 года мы любим точность во всем:</p>
+            <ul class="info-column-right-list">
+                    <li class="info-column-right-list-single"><p class="info-column-right-list-text">146%</p> Уровень самоотдачи</li>
+                    <li class="info-column-right-list-single"><p class="info-column-right-list-text">100%</p> Соблюдение сроков
+                    </li>
+                    <li class="info-column-right-list-single"><p class="info-column-right-list-text">50%</p> Минимальная предоплата
+                    </li>
                 </ul>
          </div>	
        </div>
        <div class="brand">
-         <figure class="brand-item">
-           <a href="#">
+         <ul class="brand-list">
+           <li class="brand-list-single">
+             <a class="brand-item" href="#">
              <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
-         </a>
-         </figure> 
-         <figure class="brand-item">
-           <a href="#">
+             </a>
+           </li>
+           <li class="brand-list-single">
+             <a class="brand-item" href="#">
              <img src="http://placehold.it/150x100" width="150" height="100" alt="Barbershop Borodinsky">
-           </figure>
-         </figure>
-         <figure class="brand-item">
-           <a href="#">
+             </a>
+           </li>
+           <li class="brand-list-single">  
+             <a class="brand-item" href="#">
              <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
-           </a>
-         </figure>
-         <figure class="brand-item">
-           <a href="#">
+             </a>
+           </li>
+           <li class="brand-list-single">  
+             <a class="brand-item" href="#">
              <img src="http://placehold.it/150x100" width="150" height="100" alt="Mishka">
-           </a>
-         </figure>
+             </a>
+           </li>  
+         </ul>   
        </div>
      </main>
      <footer class="main-footer">
+       <div class="container">
        <div class="map">
          <div class="contacts">
            <h3 class="contacts-title">Nerds design studio</h3>
            <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
            <p class="contacts-info">тел. +7 (812) 275-75-75</p>
-           <a href="#" class="footer-btn-contacts">Напишите нам</a>
+           <a href="#" class="contacts-btn">Напишите нам</a>
          </div>
        </div>
        <div class="bottom-footer">
@@ -132,9 +150,10 @@
            <a href="#" class="footer-btn-inst">inst</a>
        	 </div>
        	 <div class="bottom-footer-right">
-           <h2 class="bottom-footer-title">Давайте дружить, это выгодно!</h2>
-           <p bottom-footer-info>Скидка 10% для друзей из социальных сетей.</p>
+           <h2 class="bottom-footer-right-title">Давайте дружить, это выгодно!</h2>
+           <p class="bottom-footer-info">Скидка 10% для друзей из социальных сетей.</p>
        	 </div>
+       </div>
        </div>
      </footer>
   </body>
