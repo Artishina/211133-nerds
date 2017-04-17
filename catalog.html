@@ -21,20 +21,21 @@
               <a class="main-header-navigation-link" href="#" title="Клиенты">Клиенты</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#" title="Магазин">Магазин</a>
+              <a class="main-header-navigation-link main-header-navigation-link-active" title="Магазин">Магазин</a>
             </li>
             <li class="main-header-list-single">
               <a class="main-header-navigation-link" href="#" title="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="trash">
-          <a class="trash-trashbox" href="#">Корзина</a>
+        <div class="basket">
+          <a class="basket-link" href="#">Корзина</a>
         </div>
+        <h1 class="main-header-title">Магазин готовых шаблонов</h1>
       </div>
-      <h1 class="main-header-title">Магазин готовых шаблонов</h1>
     </header>
-    <main class="container">
+    <main class="main-main">
+      <div class="container">
       <div class="catalog-column">
         <div class="catalog-column-left">
           <form action="post" method="post">
@@ -47,26 +48,46 @@
             </fieldset>
             <fieldset class="catalog-column-left-net">
               <legend class="catalog-column-left-title">Сетка:</legend>
-              <label class="catalog-column-left-net-label" for="adaptive">Адаптивная</label>
-              <input class="catalog-column-left-net-input" id="adaptive" type="radio" name="net" value="adaptive" checked>
-              <label class="catalog-column-left-net-label" for="fixed">Фиксированная</label>
-              <input class="catalog-column-left-net-input" id="fixed" type="radio" name="net" value="fixed">
-              <label class="catalog-column-left-net-label" for="rubber">Резиновая</label>
-              <input class="catalog-column-left-net-input" id="rubber" type="radio" name="net" value="rubber">
+              <ul class="catalog-column-left-net-list">
+                <li class="catalog-column-left-net-list-single">
+                <label class="catalog-column-left-net-label" for="adaptive">Адаптивная</label>
+                <input class="catalog-column-left-net-input" id="adaptive" type="radio" name="net" checked>
+                </li>
+                <li class="catalog-column-left-net-list-single">
+                <label class="catalog-column-left-net-label" for="fixed">Фиксированная</label>
+                <input class="catalog-column-left-net-input" id="fixed" type="radio" name="net" >
+                </li>
+                <li class="catalog-column-left-net-list-single">
+                <label class="catalog-column-left-net-label" for="rubber">Резиновая</label>
+                <input class="catalog-column-left-net-input" id="rubber" type="radio" name="net">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="catalog-column-left-features">
               <legend class="catalog-column-left-title">Особенности</legend>
-              <label class="catalog-column-left-features-label" for="slider">Слайдер</label>
-              <input class="catalog-column-left-features-input" id="slider" type="checkbox" name="slider" value="slider" checked>
-              <label class="catalog-column-left-features-label" for="advantages">Блок преимуществ</label>
-              <input class="catalog-column-left-features-input" id="advantages" type="checkbox" name="advantages" value="advantages">
-              <label class="catalog-column-left-features-label" for="news">Новости</label>
-              <input class="catalog-column-left-features-input" id="news" type="checkbox" name="news" value="news" checked>
-              <label class="catalog-column-left-features-label" for="gallery">Галерея</label>
-              <input class="catalog-column-left-features-input" id="gallery" type="checkbox" name="gallery" value="gallery">
-              <label class="catalog-column-left-features-label" for="trashbox">Корзина
-              </label>
-              <input class="catalog-column-left-features-input" id="trashbox" type="checkbox" name="trashbox" value="trashbox">
+                <ul class="catalog-column-left-features-list">
+                  <li class="catalog-column-left-features-list-single">
+                  <label class="catalog-column-left-features-label" for="slider">Слайдер</label>
+                  <input class="catalog-column-left-features-input" id="slider" type="checkbox" name="slider" checked>
+                  </li>
+                  <li class="catalog-column-left-features-list-single">
+                  <label class="catalog-column-left-features-label" for="advantages">Блок преимуществ</label>
+                  <input class="catalog-column-left-features-input" id="advantages" type="checkbox" name="advantages">
+                  </li>
+                  <li class="catalog-column-left-features-list-single">
+                  <label class="catalog-column-left-features-label" for="news">Новости</label>
+                  <input class="catalog-column-left-features-input" id="news" type="checkbox" name="news" checked>
+                  </li>
+                  <li class="catalog-column-left-features-list-single">
+                  <label class="catalog-column-left-features-label" for="gallery">Галерея</label>
+                  <input class="catalog-column-left-features-input" id="gallery" type="checkbox" name="gallery">
+                  </li>
+                  <li class="catalog-column-left-features-list-single">
+                  <label class="catalog-column-left-features-label" for="trashbox">Корзина
+                  </label>
+                  <input class="catalog-column-left-features-input" id="trashbox" type="checkbox" name="trashbox">
+                  </li>
+                </ul>
             </fieldset>
             <fieldset class="catalog-column-left-btn">
               <button type="submit" class="btn catalog-column-left-btn">Показать</button>
@@ -79,63 +100,92 @@
               <h3 class="catalog-sort-title">Сортировать:</h3>
             </div>
             <div class="catalog-sort-column-right">  
-              <a href="#" class="catalog-sort-option catalog-option-active">По цене</a>
-              <a href="#" class="catalog-sort-option catalog-option-inactive">По типу</a>
-              <a href="#" class="catalog-sort-option catalog-option-inactive">По названию</a>
+              <ul class="">
+              <li class="">
+                <a href="#" class="catalog-sort-option catalog-option-active">По цене</a>
+              </li>
+              <li>
+                <a href="#" class="catalog-sort-option catalog-option-inactive">По типу</a>
+              </li>
+              <li>
+                <a href="#" class="catalog-sort-option catalog-option-inactive">По названию</a>
+              </li>
+              </ul>
+              <ul class="">
+                <li>
+                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">▲</a>
+                </li>
+                <li>
+                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">▲</a>
+                </li>
+              </ul>
             </div>  
           </div>
           <div class="catalog-block">
-            <a href="#" class="catalog-item">
+          <ul class="catalog-block-list">
+            <li class="catalog-block-list-single">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="sedona">
               <div class="catalog-item-block">
+              <a href="#" class="catalog-item">
                <h3 class="catalog-item-block-title">Sedona</h3>
+              </a>
                <p class="catalog-item-block-info">Информационный сайт для туристов</p>
                <p class="catalog-item-block-btn">9 900 руб.</p>
               </div>
-            </a>
-            <a href="#" class="catalog-item">
+            </li>
+            <li class="catalog-block-list-single">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="pink">
               <div class="catalog-item-block">
+              <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Pink</h3>
+              </a>  
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
-            </a>
-            <a href="#" class="catalog-item">
+            </li>
+            <li class="catalog-block-list-single">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="barbershop">
               <div class="catalog-item-block">
+              <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Barbershop</h3>
+              </a>
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
-            </a>
-            <a href="#" class="catalog-item">
+            </li>
+            <li class="catalog-block-list-single">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="mishka">
               <div class="catalog-item-block">
+              <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Mishka</h3>
+              </a>  
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
-            </a>
-            <a href="#" class="catalog-item">
+            </li>
+            <li class="catalog-block-list-single">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="a">
               <div class="catalog-item-block">
+              <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">A</h3>
+              </a>
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
-            </a>
-            <a href="#" class="catalog-item">
+            </li>
+            <li class="catalog-block-list-single">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="Кваст">
               <div class="catalog-item-block">
+              <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Кваст</h3>
+              </a>  
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
-            </a>
+            </li>
+          </ul>
           </div>
-        </div>
-        <div class="catalog-pager">
+          <div class="catalog-pager">
           <ul class="catalog-pager-list">
           <li class="catalog-pager-list-sigle">
             <a class="catalog-page catalog-page-active">1</a>
@@ -150,12 +200,14 @@
             <a class="catalog-page catalog-page-inactive" href="#">Следующая</a>
           </li>
         </ul>
-        </div>  
-      </div>     	
+        </div> 
+        </div>
+      </div>
+      </div>      	
     </main>
     <footer class="main-footer">
-       <div class="container">
-       <div class="map">
+       <img class="map-img" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+       <div class="map-container">
          <div class="contacts">
            <h3 class="contacts-title">Nerds design studio</h3>
            <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -163,18 +215,51 @@
            <a href="#" class="contacts-btn">Напишите нам</a>
          </div>
        </div>
-       <div class="bottom-footer">
-         <div class="bottom-footer-left">
-           <a href="#" class="footer-btn-vk">vk</a>
-           <a href="#" class="footer-btn-fb">fb</a>
-           <a href="#" class="footer-btn-inst">inst</a>
+       <div class="container">
+         <div class="bottom-footer">
+           <div class="bottom-footer-left">
+             <a href="#" class="footer-btn-vk">vk</a>
+             <a href="#" class="footer-btn-fb">fb</a>
+             <a href="#" class="footer-btn-inst">inst</a>
+           </div>
+           <div class="bottom-footer-right">
+             <h2 class="bottom-footer-right-title">Давайте дружить, это выгодно!</h2>
+             <p class="bottom-footer-info">Скидка 10% для друзей из социальных сетей.</p>
+           </div>
          </div>
-         <div class="bottom-footer-right">
-           <h2 class="bottom-footer-right-title">Давайте дружить, это выгодно!</h2>
-           <p class="bottom-footer-info">Скидка 10% для друзей из социальных сетей.</p>
-         </div>
-       </div>
        </div>
      </footer>
+     <div class="feedback">
+       <form action="post" method="post">
+         <fieldset class="footer-form-column">
+           <fieldset class="footer-form-column-center">
+             <fieldset class="footer-form-column-left">
+               <legend class="footer-feedback-title">Напишите нам</legend>
+             </fieldset>
+             <fieldset class="footer-form-column-right">
+               <a class="feedback-cancel-btn" href="#"><img class="feedback-cancel-img" src="http://placehold.it/150x100" width="150" height="100" alt="Закрыть">
+             </a>
+             </fieldset>
+           </fieldset>
+           <fieldset class="footer-form-column-center">
+             <fieldset class="footer-form-column-left">
+               <label for="feedback-login" class="feedback-login-label">Ваше имя:</label>
+               <input class="feedback-login-input" type="text" name="login" id="feedback-login" value="login">
+             </fieldset>
+             <fieldset class="footer-form-column-right">
+               <label class="feedback-email-label" for="feedback-email">Ваш e-mail:</label>
+               <input class="feedback-email-input" type="text" name="email" id="feedback-email" value="email">
+             </fieldset>
+           </fieldset>
+             <fieldset class="feedback-letter">
+             <label class="feedback-letter-label" for="feedback-text">Текст письма:</label>
+             <textarea class="feedback-letter-textarea" name="text" id="feedback-text" rows="5"></textarea>
+           </fieldset>  
+           <fieldset class="feedback-btn">
+             <a class="feedback-btn-btn" href="#">Отправить</a>  
+           </fieldset>  
+         </fieldset>
+       </form>
+     </div>
   </body>
 </html>
