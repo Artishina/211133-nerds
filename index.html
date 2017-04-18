@@ -15,16 +15,16 @@
         <nav>
           <ul class="main-header-navigation">
             <li class="main-header-navigation-single">
-              <a class="main-header-navigation-link" href="#" title="Студия">Студия</a>
+              <a class="main-header-navigation-link" href="#">Студия</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#" title="Клиенты">Клиенты</a>
+              <a class="main-header-navigation-link" href="#">Клиенты</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#" title="Магазин">Магазин</a>
+              <a class="main-header-navigation-link" href="#">Магазин</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#" title="Контакты">Контакты</a>
+              <a class="main-header-navigation-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -62,9 +62,8 @@
            <a href="#" class="slider-info-btn">Узнать больше</a>
          </div>
        </div>
-       <form action="post" method="post">
-         <div class="slider-form">
-           <ul class="slider-form-list">
+       <div class="slider">
+           <ul class="slider-list">
              <li class="slider-label-input">
              <label class="slider-label"><input type="radio" id="slider-1" class="slider-input" name="slider1" checked>
              </label>
@@ -78,8 +77,7 @@
              </label>
              </li>
            </ul>
-         </div>
-       </form> 
+       </div>
        </div>
        </div>  
      </header>
@@ -159,14 +157,16 @@
        </div>
      </main>
      <footer class="main-footer">
-       <img class="map-img" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
-       <div class="map-container">
+       <div class="container">
+       <div class="map-block">
+         <img class="map-img" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
          <div class="contacts">
            <h3 class="contacts-title">Nerds design studio</h3>
            <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
            <p class="contacts-info">тел. +7 (812) 275-75-75</p>
            <a href="#" class="contacts-btn">Напишите нам</a>
          </div>
+       </div>
        </div>
        <div class="container">
          <div class="bottom-footer">
@@ -184,35 +184,27 @@
      </footer>
      <div class="feedback">
        <form action="post" method="post">
-         <fieldset class="footer-form-column">
-           <fieldset class="footer-form-column-center">
-             <fieldset class="footer-form-column-left">
-               <legend class="footer-feedback-title">Напишите нам</legend>
-             </fieldset>
-             <fieldset class="footer-form-column-right">
-               <a class="feedback-cancel-btn" href="#"><img class="feedback-cancel-img" src="http://placehold.it/150x100" width="150" height="100" alt="Закрыть">
-             </a>
-             </fieldset>
-           </fieldset>
-           <fieldset class="footer-form-column-center">
-             <fieldset class="footer-form-column-left">
+         <div class="footer-form">
+           <div class="footer-form-column">
+             <div class="footer-form-column-left">
+               <h3 class="footer-feedback-title">Напишите нам</h3>
                <label for="feedback-login" class="feedback-login-label">Ваше имя:</label>
                <input class="feedback-login-input" type="text" name="login" id="feedback-login" value="login">
-             </fieldset>
-             <fieldset class="footer-form-column-right">
+               <a class="feedback-btn-btn" href="#">Отправить</a> 
+             </div>
+             <div class="footer-form-column-right">
+               <a class="feedback-cancel-btn" href="#"><img class="feedback-cancel-img" src="http://placehold.it/150x100" width="150" height="100" alt="Закрыть">
+               </a>
                <label class="feedback-email-label" for="feedback-email">Ваш e-mail:</label>
                <input class="feedback-email-input" type="text" name="email" id="feedback-email" value="email">
-             </fieldset>
-           </fieldset>
-             <fieldset class="feedback-letter">
-             <label class="feedback-letter-label" for="feedback-text">Текст письма:</label>
-             <textarea class="feedback-letter-textarea" name="text" id="feedback-text" rows="5"></textarea>
-           </fieldset>  
-           <fieldset class="feedback-btn">
-             <a class="feedback-btn-btn" href="#">Отправить</a>  
-           </fieldset>  
-         </fieldset>
-       </form>
+             </div>
+           </div>
+             <div class="feedback-letter">
+               <label class="feedback-letter-label" for="feedback-text">Текст письма:</label>
+               <textarea class="feedback-letter-textarea" name="text" id="feedback-text" rows="5"></textarea>
+             </div>
+           </div>  
+        </form>
      </div>
   </body>
 </html>

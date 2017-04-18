@@ -15,16 +15,16 @@
         <nav>
           <ul class="main-header-navigation">
             <li class="main-header-navigation-single">
-              <a class="main-header-navigation-link" href="#" title="Студия">Студия</a>
+              <a class="main-header-navigation-link" href="#">Студия</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#" title="Клиенты">Клиенты</a>
+              <a class="main-header-navigation-link" href="#">Клиенты</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link main-header-navigation-link-active" title="Магазин">Магазин</a>
+              <a class="main-header-navigation-link main-header-navigation-link-active">Магазин</a>
             </li>
             <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#" title="Контакты">Контакты</a>
+              <a class="main-header-navigation-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -50,16 +50,13 @@
               <legend class="catalog-column-left-title">Сетка:</legend>
               <ul class="catalog-column-left-net-list">
                 <li class="catalog-column-left-net-list-single">
-                <label class="catalog-column-left-net-label" for="adaptive">Адаптивная</label>
-                <input class="catalog-column-left-net-input" id="adaptive" type="radio" name="net" checked>
+                  <label class="catalog-column-left-net-label" for="adaptive"><input class="catalog-column-left-net-input" id="adaptive" type="radio" name="net" checked>Адаптивная</label>
                 </li>
                 <li class="catalog-column-left-net-list-single">
-                <label class="catalog-column-left-net-label" for="fixed">Фиксированная</label>
-                <input class="catalog-column-left-net-input" id="fixed" type="radio" name="net" >
+                  <label class="catalog-column-left-net-label" for="fixed"><input class="catalog-column-left-net-input" id="fixed" type="radio" name="net" >Фиксированная</label>
                 </li>
                 <li class="catalog-column-left-net-list-single">
-                <label class="catalog-column-left-net-label" for="rubber">Резиновая</label>
-                <input class="catalog-column-left-net-input" id="rubber" type="radio" name="net">
+                  <label class="catalog-column-left-net-label" for="rubber"><input class="catalog-column-left-net-input" id="rubber" type="radio" name="net">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -67,31 +64,26 @@
               <legend class="catalog-column-left-title">Особенности</legend>
                 <ul class="catalog-column-left-features-list">
                   <li class="catalog-column-left-features-list-single">
-                  <label class="catalog-column-left-features-label" for="slider">Слайдер</label>
-                  <input class="catalog-column-left-features-input" id="slider" type="checkbox" name="slider" checked>
+                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" id="slider" type="checkbox" name="slider" checked>Слайдер</label>
                   </li>
                   <li class="catalog-column-left-features-list-single">
-                  <label class="catalog-column-left-features-label" for="advantages">Блок преимуществ</label>
-                  <input class="catalog-column-left-features-input" id="advantages" type="checkbox" name="advantages">
+                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" id="advantages" type="checkbox" name="advantages">Блок преимуществ</label>
                   </li>
                   <li class="catalog-column-left-features-list-single">
-                  <label class="catalog-column-left-features-label" for="news">Новости</label>
-                  <input class="catalog-column-left-features-input" id="news" type="checkbox" name="news" checked>
+                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" id="news" type="checkbox" name="news" checked>Новости</label>
                   </li>
                   <li class="catalog-column-left-features-list-single">
-                  <label class="catalog-column-left-features-label" for="gallery">Галерея</label>
-                  <input class="catalog-column-left-features-input" id="gallery" type="checkbox" name="gallery">
+                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" id="gallery" type="checkbox" name="gallery">Галерея</label>
                   </li>
                   <li class="catalog-column-left-features-list-single">
-                  <label class="catalog-column-left-features-label" for="trashbox">Корзина
-                  </label>
-                  <input class="catalog-column-left-features-input" id="trashbox" type="checkbox" name="trashbox">
+                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" id="basket" type="checkbox" name="basket">Корзина
+                    </label>
                   </li>
                 </ul>
             </fieldset>
-            <fieldset class="catalog-column-left-btn">
+            <div class="catalog-column-left-btn">
               <button type="submit" class="btn catalog-column-left-btn">Показать</button>
-            </fieldset>
+            </div>
           </form>
         </div>
         <div class="catalog-column-right">
@@ -113,10 +105,10 @@
               </ul>
               <ul class="">
                 <li>
-                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">▲</a>
+                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">С первых до последних</a>
                 </li>
                 <li>
-                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">▲</a>
+                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">С последних до первых</a>
                 </li>
               </ul>
             </div>  
@@ -124,6 +116,7 @@
           <div class="catalog-block">
           <ul class="catalog-block-list">
             <li class="catalog-block-list-single">
+              <div class="catalog-block-item">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="sedona">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
@@ -132,8 +125,10 @@
                <p class="catalog-item-block-info">Информационный сайт для туристов</p>
                <p class="catalog-item-block-btn">9 900 руб.</p>
               </div>
+              </div>
             </li>
             <li class="catalog-block-list-single">
+            <div class="catalog-block-item">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="pink">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
@@ -142,8 +137,10 @@
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
+              </div>
             </li>
             <li class="catalog-block-list-single">
+            <div class="catalog-block-item">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="barbershop">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
@@ -152,8 +149,10 @@
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
+            </div>  
             </li>
             <li class="catalog-block-list-single">
+            <div class="catalog-block-item">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="mishka">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
@@ -162,8 +161,10 @@
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
+            </div>  
             </li>
             <li class="catalog-block-list-single">
+            <div class="catalog-block-item">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="a">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
@@ -172,8 +173,10 @@
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
+            </div>  
             </li>
             <li class="catalog-block-list-single">
+            <div class="catalog-block-item">
               <img class="catalog-img" src="http://placehold.it/150x100" width="150" height="100" alt="Кваст">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
@@ -182,6 +185,7 @@
                 <p class="catalog-item-block-info"></p>
                 <p class="catalog-item-block-btn"></p>
               </div>
+            </div>
             </li>
           </ul>
           </div>
@@ -206,14 +210,16 @@
       </div>      	
     </main>
     <footer class="main-footer">
-       <img class="map-img" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
-       <div class="map-container">
+       <div class="container">
+       <div class="map-block">
+         <img class="map-img" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
          <div class="contacts">
            <h3 class="contacts-title">Nerds design studio</h3>
            <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
            <p class="contacts-info">тел. +7 (812) 275-75-75</p>
            <a href="#" class="contacts-btn">Напишите нам</a>
          </div>
+       </div>
        </div>
        <div class="container">
          <div class="bottom-footer">
@@ -231,35 +237,27 @@
      </footer>
      <div class="feedback">
        <form action="post" method="post">
-         <fieldset class="footer-form-column">
-           <fieldset class="footer-form-column-center">
-             <fieldset class="footer-form-column-left">
-               <legend class="footer-feedback-title">Напишите нам</legend>
-             </fieldset>
-             <fieldset class="footer-form-column-right">
-               <a class="feedback-cancel-btn" href="#"><img class="feedback-cancel-img" src="http://placehold.it/150x100" width="150" height="100" alt="Закрыть">
-             </a>
-             </fieldset>
-           </fieldset>
-           <fieldset class="footer-form-column-center">
-             <fieldset class="footer-form-column-left">
+         <div class="footer-form">
+           <div class="footer-form-column">
+             <div class="footer-form-column-left">
+               <h3 class="footer-feedback-title">Напишите нам</h3>
                <label for="feedback-login" class="feedback-login-label">Ваше имя:</label>
                <input class="feedback-login-input" type="text" name="login" id="feedback-login" value="login">
-             </fieldset>
-             <fieldset class="footer-form-column-right">
+               <a class="feedback-btn-btn" href="#">Отправить</a> 
+             </div>
+             <div class="footer-form-column-right">
+               <a class="feedback-cancel-btn" href="#"><img class="feedback-cancel-img" src="http://placehold.it/150x100" width="150" height="100" alt="Закрыть">
+               </a>
                <label class="feedback-email-label" for="feedback-email">Ваш e-mail:</label>
                <input class="feedback-email-input" type="text" name="email" id="feedback-email" value="email">
-             </fieldset>
-           </fieldset>
-             <fieldset class="feedback-letter">
-             <label class="feedback-letter-label" for="feedback-text">Текст письма:</label>
-             <textarea class="feedback-letter-textarea" name="text" id="feedback-text" rows="5"></textarea>
-           </fieldset>  
-           <fieldset class="feedback-btn">
-             <a class="feedback-btn-btn" href="#">Отправить</a>  
-           </fieldset>  
-         </fieldset>
-       </form>
+             </div>
+           </div>
+             <div class="feedback-letter">
+               <label class="feedback-letter-label" for="feedback-text">Текст письма:</label>
+               <textarea class="feedback-letter-textarea" name="text" id="feedback-text" rows="5"></textarea>
+             </div>
+           </div>  
+        </form>
      </div>
   </body>
 </html>
