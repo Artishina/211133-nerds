@@ -6,8 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <header class="main-header-catalog">
+      <div class="container clearfix">
         <div class="main-header-logo">
           <a href="index.html">
             <img class="main-header-logo-img" src="img/nerds-logo.png" alt="Nerds" width="160" height="65">
@@ -32,22 +32,28 @@
         <div class="basket">
           <a class="basket-link" href="#">Корзина</a>
         </div>
-        <h1 class="main-header-title">Магазин готовых шаблонов</h1>
+          <h1 class="main-header-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main class="main-main">
+    <main class="main">
       <div class="container">
-      <div class="catalog-column">
+      <div class="catalog-column clearfix">
         <div class="catalog-column-left">
           <form action="post" method="post">
             <fieldset class="catalog-column-left-price">
       	      <legend class="catalog-column-left-title">Стоимость:</legend>
-      	      <label class="catalog-column-left-price-label"><input class="catalog-column-left-price-input" type="text" name="from" value="0"><span class="from">от
-              </span>
-              </label>
-              <label class="catalog-column-left-price-label"><input class="catalog-column-left-price-input" type="text" name="to" value="15000"><span class="to">до
-              </span>
-              </label>
+              <div class="from">
+      	        <label class="catalog-column-left-price-label"><input class="catalog-column-left-price-input" type="text" name="from" value="0">
+                <span class="from-span">от
+                </span>
+                </label>
+              </div>  
+              <div class="to">
+                <label class="catalog-column-left-price-label"><input class="catalog-column-left-price-input" type="text" name="to" value="15000">
+                <span class="to-span">до
+                </span>
+                </label>
+              </div>
               </fieldset>
             <fieldset class="catalog-column-left-net">
               <legend class="catalog-column-left-title">Сетка:</legend>
@@ -105,9 +111,9 @@
           </form>
         </div>
         <div class="catalog-column-right">
-          <div class="catalog-sort-column">
+          <div class="catalog-sort-column clearfix">
             <div class="catalog-sort-column-left">
-              <h3 class="catalog-sort-title">Сортировать:</h3>
+              <p class="catalog-sort-name">Сортировать:</p>
             </div>
             <div class="catalog-sort-column-right">  
               <ul class="">
@@ -132,7 +138,7 @@
             </div>  
           </div>
           <div class="catalog-block">
-          <ul class="catalog-block-list">
+          <ul class="catalog-block-list clearfix">
             <li class="catalog-block-list-single">
               <div class="catalog-block-item">
               <img class="catalog-img" src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
@@ -227,8 +233,8 @@
       </div>
       </div>      	
     </main>
-       <footer class="main-footer">
-       <div class="map-block">
+       <footer class="main-footer clearfix">
+       <div class="map-block clearfix">
        <img class="map-img" src="img/map.png" width="1440" height="416" alt="Карта">
        <div class="container">
          <div class="contacts">
@@ -240,14 +246,15 @@
        </div>
        </div>
        <div class="container">
-         <div class="bottom-footer">
+         <div class="bottom-footer clearfix">
            <div class="bottom-footer-left">
              <a href="#" class="footer-btn-vk">vk</a>
              <a href="#" class="footer-btn-fb">fb</a>
              <a href="#" class="footer-btn-inst">inst</a>
            </div>
            <div class="bottom-footer-right">
-             <h2 class="bottom-footer-right-title">Давайте дружить, это выгодно!</h2>
+             <p class="bottom-footer-right-name">Давайте дружить, это выгодно!
+             </p>
              <p class="bottom-footer-info">Скидка 10% для друзей из социальных сетей.</p>
            </div>
          </div>
@@ -255,7 +262,7 @@
      </footer>
      <div class="feedback">
        <form action="post" method="post">
-           <h3 class="feedback-header-title">Напишите нам</h3>
+           <p class="feedback-header-name">Напишите нам</p>
            <div class="footer-form-column">
              <div class="footer-form-column-left">
                <label for="feedback-login" class="feedback-login-label">Ваше имя:</label>
