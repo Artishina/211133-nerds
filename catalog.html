@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
 	  <title>Магазин</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header-catalog">
-      <div class="container clearfix">
+      <div class="container">
+        <div class="main-header-layout-catalog">
         <div class="main-header-logo">
           <a href="index.html">
             <img class="main-header-logo-img" src="img/nerds-logo.png" alt="Nerds" width="160" height="65">
@@ -32,12 +34,13 @@
         <div class="basket">
           <a class="basket-link" href="#">Корзина</a>
         </div>
+        </div>
           <h1 class="main-header-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main class="main">
       <div class="container">
-      <div class="catalog-column clearfix">
+      <div class="catalog-column">
         <div class="catalog-column-left">
           <form action="post" method="post">
             <fieldset class="catalog-column-left-price">
@@ -111,7 +114,7 @@
           </form>
         </div>
         <div class="catalog-column-right">
-          <div class="catalog-sort-column clearfix">
+          <div class="catalog-sort-column">
             <div class="catalog-sort-column-left">
               <p class="catalog-sort-name">Сортировать:</p>
             </div>
@@ -137,8 +140,8 @@
               </ul>
             </div>  
           </div>
-          <div class="catalog-block">
-          <ul class="catalog-block-list clearfix">
+          
+          <ul class="catalog-block">
             <li class="catalog-block-list-single">
               <div class="catalog-block-item">
               <img class="catalog-img" src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
@@ -212,7 +215,7 @@
             </div>
             </li>
           </ul>
-          </div>
+          
           <div class="catalog-pager">
           <ul class="catalog-pager-list">
           <li class="catalog-pager-list-sigle">
@@ -233,8 +236,8 @@
       </div>
       </div>      	
     </main>
-       <footer class="main-footer clearfix">
-       <div class="map-block clearfix">
+       <footer class="main-footer">
+       <div class="map-block">
        <img class="map-img" src="img/map.png" width="1440" height="416" alt="Карта">
        <div class="container">
          <div class="contacts">
@@ -246,7 +249,7 @@
        </div>
        </div>
        <div class="container">
-         <div class="bottom-footer clearfix">
+         <div class="bottom-footer">
            <div class="bottom-footer-left">
              <a href="#" class="footer-btn-vk">vk</a>
              <a href="#" class="footer-btn-fb">fb</a>
