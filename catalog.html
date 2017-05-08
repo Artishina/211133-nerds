@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	  <title>Магазин</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -17,17 +18,17 @@
         </div>
         <nav class="main-header-navigation">
           <ul>
-            <li class="main-header-navigation-single">
-              <a class="main-header-navigation-link" href="#">Студия</a>
+            <li>
+              <a class="main-header-navigation-link link-1" href="#">Студия</a>
             </li>
-            <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#">Клиенты</a>
+            <li>
+              <a class="main-header-navigation-link link-2" href="#">Клиенты</a>
             </li>
-            <li class="main-header-list-single">
-              <a class="main-header-navigation-link main-header-navigation-link-active">Магазин</a>
+            <li>
+              <a class="main-header-navigation-link link-3 active">Магазин</a>
             </li>
-            <li class="main-header-list-single">
-              <a class="main-header-navigation-link" href="#">Контакты</a>
+            <li>
+              <a class="main-header-navigation-link link-4" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -44,71 +45,86 @@
         <div class="catalog-column-left">
           <form action="post" method="post">
             <fieldset class="catalog-column-left-price">
-      	      <legend class="catalog-column-left-title">Стоимость:</legend>
-              <div class="from">
-      	        <label class="catalog-column-left-price-label"><input class="catalog-column-left-price-input" type="text" name="from" value="0">
-                <span class="from-span">от
-                </span>
-                </label>
-              </div>  
-              <div class="to">
-                <label class="catalog-column-left-price-label"><input class="catalog-column-left-price-input" type="text" name="to" value="15000">
-                <span class="to-span">до
-                </span>
-                </label>
+      	      <legend>Стоимость:</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-              </fieldset>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+      	    </fieldset>
             <fieldset class="catalog-column-left-net">
-              <legend class="catalog-column-left-title">Сетка:</legend>
-              <ul class="catalog-column-left-net-list">
-                <li class="catalog-column-left-net-list-single">
-                  <label class="catalog-column-left-net-label"><input class="catalog-column-left-net-input" type="radio" name="net" checked><span class="adaptive">Адаптивная
-                  </span>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <label class="net-label">
+                  <input type="radio" name="net" checked>
+                  <span class="radio-indicator"></span>
+                  Адаптивная
                   </label>
                 </li>
                 <li class="catalog-column-left-net-list-single">
-                  <label class="catalog-column-left-net-label"><input class="catalog-column-left-net-input" type="radio" name="net"><span class="fixed">Фиксированная
-                  </span>
+                  <label class="net-label">
+                  <input type="radio" name="net">
+                  <span class="radio-indicator"></span>
+                  Фиксированная
                   </label>
                 </li>
-                <li class="catalog-column-left-net-list-single">
-                  <label class="catalog-column-left-net-label"><input class="catalog-column-left-net-input" type="radio" name="net"><span class="rubber">Резиновая
-                  </span>
+                <li>
+                  <label class="net-label">
+                  <input type="radio" name="net">
+                  <span class="radio-indicator"></span>
+                  Резиновая
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-column-left-features">
-              <legend class="catalog-column-left-title">Особенности</legend>
-                <ul class="catalog-column-left-features-list">
-                  <li class="catalog-column-left-features-list-single">
-                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" type="checkbox" name="slider" checked><span class="slider-span">Слайдер
-                    </span>
+              <legend>Особенности:</legend>
+                <ul>
+                  <li>
+                    <label class="features-label">
+                    <input type="checkbox" name="slider" checked>
+                    <span class="checkbox-indicator"></span>
+                    Слайдер
                     </label>
                   </li>
-                  <li class="catalog-column-left-features-list-single">
-                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" type="checkbox" name="advantages"><span class="advantages">Блок преимуществ
-                    </span>
+                  <li>
+                    <label class="features-label">
+                    <input type="checkbox" name="advantages">
+                    <span class="checkbox-indicator"></span>
+                    Блок преимуществ
                     </label>
                   </li>
-                  <li class="catalog-column-left-features-list-single">
-                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" type="checkbox" name="news" checked><span class="news">Новости
-                    </span>
+                  <li>
+                    <label class="features-label">
+                    <input type="checkbox" name="news" checked>
+                    <span class="checkbox-indicator"></span>
+                    Новости
                     </label>
                   </li>
-                  <li class="catalog-column-left-features-list-single">
-                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" type="checkbox" name="gallery"><span class="gallery">Галерея
-                    </span>
+                  <li>
+                    <label class="features-label">
+                    <input type="checkbox" name="gallery">
+                    <span class="checkbox-indicator"></span>
+                    Галерея
                     </label>
                   </li>
-                  <li class="catalog-column-left-features-list-single">
-                    <label class="catalog-column-left-features-label"><input class="catalog-column-left-features-input" type="checkbox" name="basket"><span class="basket-span">Корзина
-                    </span>
+                  <li>
+                    <label class="features-label">
+                    <input type="checkbox" name="basket">
+                    <span class="checkbox-indicator"></span>
+                    Корзина
                     </label>
                   </li>
                 </ul>
             </fieldset>
-            <div class="catalog-column-left-btn">
+            <div class="catalog-column-left-btn-block">
               <button type="submit" class="btn catalog-column-left-btn">Показать</button>
             </div>
           </form>
@@ -116,101 +132,102 @@
         <div class="catalog-column-right">
           <div class="catalog-sort-column">
             <div class="catalog-sort-column-left">
-              <p class="catalog-sort-name">Сортировать:</p>
+              <p>Сортировать:</p>
             </div>
             <div class="catalog-sort-column-right">  
-              <ul class="catalog-sort-column-right-list">
-              <li class="catalog-sort-column-right-list-single">
-                <a href="#" class="catalog-sort-option catalog-option-active">По цене</a>
+              <ul>
+              <li>
+                <a class="catalog-sort-option active">По цене</a>
               </li>
-              <li class="catalog-sort-column-right-list-single">
-                <a href="#" class="catalog-sort-option catalog-option-inactive">По типу</a>
+              <li>
+                <a href="#" class="catalog-sort-option">По типу</a>
               </li>
-              <li class="catalog-sort-column-right-list-single">
-                <a href="#" class="catalog-sort-option catalog-option-inactive">По названию</a>
+              <li>
+                <a href="#" class="catalog-sort-option">По названию</a>
               </li>
-              </ul>
-              <ul class="catalog-sort-column-right-list">
-                <li class="catalog-sort-column-right-list-single">
-                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">С первых до последних</a>
+                <li>
+                <a class="catalog-sort-option-triangle active">
+                С первых до последних
+                </a>
                 </li>
-                <li class="catalog-sort-column-right-list-single">
-                <a href="#" class="catalog-sort-option-triangle catalog-option-inactive">С последних до первых</a>
+                <li>
+                <a href="#" class="catalog-sort-option-triangle inactive">
+                С последних до первых
+                </a>
                 </li>
               </ul>
             </div>  
           </div>
-          
           <ul class="catalog-block">
             <li class="catalog-block-list-single">
               <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
+              <img class="catalog-img" src="img/img-sedona1.jpg" width="360" height="576" alt="sedona">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
                <h3 class="catalog-item-block-title">Sedona</h3>
               </a>
-               <p class="catalog-item-block-info">Информационный сайт для туристов</p>
-               <p class="catalog-item-block-btn">9 900 руб.</p>
+               <p class="catalog-item-block-info">Информационный сайт<br> для туристов</p>
+               <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
               </div>
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-pink.jpg" width="360" height="576"  alt="pink">
+              <img class="catalog-img" src="img/img-pink1.jpg" width="360" height="576"  alt="pink">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">Pink</h3>
+                <h3 class="catalog-item-block-title">Pink app</h3>
               </a>  
-                <p class="catalog-item-block-info"></p>
-                <p class="catalog-item-block-btn"></p>
+                <p class="catalog-item-block-info">Продуктовый лендинг приложения для IOS и Android</p>
+                <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
               </div>
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-barbershop.jpg" width="360" height="576"  alt="barbershop">
+              <img class="catalog-img" src="img/img-barbershop1.jpg" width="360" height="576"  alt="barbershop">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Barbershop</h3>
               </a>
-                <p class="catalog-item-block-info"></p>
-                <p class="catalog-item-block-btn"></p>
+                <p class="catalog-item-block-info">Сайт салоны красоты.<br> Для мужчин, да.</p>
+                <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
             </div>  
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-mishka.jpg" width="360" height="576"  alt="mishka">
+              <img class="catalog-img" src="img/img-mishka1.jpg" width="360" height="576"  alt="mishka">
               <div class="catalog-item-block">
               <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Mishka</h3>
               </a>  
-                <p class="catalog-item-block-info"></p>
-                <p class="catalog-item-block-btn"></p>
+                <p class="catalog-item-block-info">Интернет-магазин<br> вязаных игрушек</p>
+                <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
             </div>  
             </li>
             <li class="catalog-block-list-single">
-            <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-aplus.jpg" width="360" height="576"  alt="a">
-              <div class="catalog-item-block">
+            <div class="catalog-block-item lower">
+              <img class="catalog-img" src="img/img-aplus1.jpg" width="360" height="576"  alt="a">
+              <div class="catalog-item-block lower">
               <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">Aplus</h3>
+                <h3 class="catalog-item-block-title">A plus</h3>
               </a>
-                <p class="catalog-item-block-info"></p>
-                <p class="catalog-item-block-btn"></p>
+                <p class="catalog-item-block-info">Лендинг курсов повышения квалификации</p>
+                <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
             </div>  
             </li>
             <li class="catalog-block-list-single">
-            <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-kvast.jpg" width="360" height="576"  alt="Кваст">
-              <div class="catalog-item-block">
+            <div class="catalog-block-item lower">
+              <img class="catalog-img" src="img/img-kvast1.jpg" width="360" height="576"  alt="Кваст">
+              <div class="catalog-item-block lower">
               <a href="#" class="catalog-item">
                 <h3 class="catalog-item-block-title">Кваст</h3>
               </a>  
-                <p class="catalog-item-block-info"></p>
-                <p class="catalog-item-block-btn"></p>
+                <p class="catalog-item-block-info">Промо-сайт производителся крафтового кваса</p>
+                <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
             </div>
             </li>
@@ -218,17 +235,17 @@
           
           <div class="catalog-pager">
           <ul class="catalog-pager-list">
-          <li class="catalog-pager-list-sigle">
-            <a class="catalog-page catalog-page-active">1</a>
+          <li>
+            <a class="catalog-page active">1</a>
           </li>
-          <li class="catalog-pager-list-sigle">
-            <a class="catalog-page catalog-page-inactive" href="#">2</a>
+          <li>
+            <a class="catalog-page" href="#">2</a>
           </li>
-          <li class="catalog-pager-list-sigle">
-            <a class="catalog-page catalog-page-inactive" href="#">3</a>
+          <li>
+            <a class="catalog-page" href="#">3</a>
           </li>
-          <li class="catalog-pager-list-sigle">  
-            <a class="catalog-page catalog-page-inactive" href="#">Следующая</a>
+          <li>  
+            <a class="catalog-page next" href="#">Следующая</a>
           </li>
         </ul>
         </div> 
@@ -238,22 +255,23 @@
     </main>
        <footer class="main-footer">
        <div class="map-block">
-       <img class="map-img" src="img/map.png" width="1440" height="416" alt="Карта">
-       <div class="container">
-         <div class="contacts">
-           <h3 class="contacts-title">Nerds design studio</h3>
+       <img class="map-img catalog" src="img/map.png" width="1440" height="416" alt="Карта">
+       <img class="map-img-2 catalog" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+       <div class="map-container">
+         <div class="contacts catalog">
+           <h3 class="contacts-title">Nёrds design studio</h3>
            <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-           <p class="contacts-info">тел. +7 (812) 275-75-75</p>
-           <a href="#" class="contacts-btn">Напишите нам</a>
+           <p class="contacts-info-nom">тел. +7 (812) 275-75-75</p>
+           <a href="#" class="btn contacts-btn">Напишите нам</a>
          </div>
        </div>
        </div>
        <div class="container">
-         <div class="bottom-footer">
+         <div class="bottom-footer catalog">
            <div class="bottom-footer-left">
-             <a href="#" class="footer-btn-vk">vk</a>
-             <a href="#" class="footer-btn-fb">fb</a>
-             <a href="#" class="footer-btn-inst">inst</a>
+             <a href="#" class="footer-btn footer-btn-vk">vk</a>
+             <a href="#" class="footer-btn footer-btn-fb">fb</a>
+             <a href="#" class="footer-btn footer-btn-inst">inst</a>
            </div>
            <div class="bottom-footer-right">
              <p class="bottom-footer-right-name">Давайте дружить, это выгодно!
@@ -269,21 +287,21 @@
            <div class="footer-form-column">
              <div class="footer-form-column-left">
                <label for="feedback-login" class="feedback-login-label">Ваше имя:</label>
-               <input class="feedback-login-input" type="text" name="login" id="feedback-login" value="login">
+               <input class="feedback-login-input" type="text" name="login" id="feedback-login"  placeholder="Представьтесь, пожалуйста" required>
              </div>
              <div class="footer-form-column-right">
-               <label class="feedback-email-label">Ваш e-mail:<input class="feedback-email-input" type="text" name="email" value="email"></label>
+               <label class="feedback-email-label">Ваш e-mail:<input class="feedback-email-input" type="text" name="email" placeholder="Для отправки ответа" required></label>
              </div>
            </div>
            <div class="feedback-letter">
-             <label class="feedback-letter-label">Текст письма:<textarea class="feedback-letter-textarea" name="text" rows="5"></textarea></label>
+             <label class="feedback-letter-label">Текст письма:<textarea class="feedback-letter-textarea" name="text" rows="6" placeholder="В свободной форме" required></textarea></label>
            </div>
              <div class="feedback-btn">
-             <a class="feedback-btn-btn" href="#">Отправить</a>
+             <button type="submit" class="btn feedback-btn-btn" href="#">Отправить</button>
            </div>
        </form>
-        <a class="feedback-cancel-btn" href="#">Закрыть форму
-        </a>
+        <button type="submit" class="btn feedback-cancel-btn" href="#">Закрыть форму
+        </button>
      </div>
   </body>
 </html>
