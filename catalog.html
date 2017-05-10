@@ -6,6 +6,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
     <header class="main-header-catalog">
@@ -54,33 +55,24 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
               </div>
       	    </fieldset>
             <fieldset class="catalog-column-left-net">
               <legend>Сетка:</legend>
               <ul>
                 <li>
-                  <label class="net-label">
-                  <input type="radio" name="net" checked>
-                  <span class="radio-indicator"></span>
-                  Адаптивная
-                  </label>
+                  <input id="radio1" type="radio" name="net" checked>
+                  <label for="radio1" class="net-label">Адаптивная</label>
                 </li>
                 <li class="catalog-column-left-net-list-single">
-                  <label class="net-label">
-                  <input type="radio" name="net">
-                  <span class="radio-indicator"></span>
-                  Фиксированная
-                  </label>
+                  <input id="radio2" type="radio" name="net">
+                  <label for="radio2" class="net-label">Фиксированная</label>
                 </li>
                 <li>
-                  <label class="net-label">
-                  <input type="radio" name="net">
-                  <span class="radio-indicator"></span>
-                  Резиновая
-                  </label>
+                  <input id="radio3" type="radio" name="net">
+                  <label for="radio3" class="net-label">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -88,39 +80,24 @@
               <legend>Особенности:</legend>
                 <ul>
                   <li>
-                    <label class="features-label">
-                    <input type="checkbox" name="slider" checked>
-                    <span class="checkbox-indicator"></span>
-                    Слайдер
-                    </label>
+                    <input id="checkbox1" type="checkbox" name="slider" checked>
+                    <label for="checkbox1" class="features-label">Слайдер</label>
                   </li>
                   <li>
-                    <label class="features-label">
-                    <input type="checkbox" name="advantages">
-                    <span class="checkbox-indicator"></span>
-                    Блок преимуществ
-                    </label>
+                    <input id="checkbox2" type="checkbox" name="advantages">
+                    <label for="checkbox2" class="features-label">Блок преимуществ</label>
                   </li>
                   <li>
-                    <label class="features-label">
-                    <input type="checkbox" name="news" checked>
-                    <span class="checkbox-indicator"></span>
-                    Новости
-                    </label>
+                    <input id="checkbox3" type="checkbox" name="news" checked>
+                    <label for="checkbox3" class="features-label">Новости</label>
                   </li>
                   <li>
-                    <label class="features-label">
-                    <input type="checkbox" name="gallery">
-                    <span class="checkbox-indicator"></span>
-                    Галерея
-                    </label>
+                    <input id="checkbox4" type="checkbox" name="gallery">
+                    <label for="checkbox4" class="features-label">Галерея</label>
                   </li>
                   <li>
-                    <label class="features-label">
-                    <input type="checkbox" name="basket">
-                    <span class="checkbox-indicator"></span>
-                    Корзина
-                    </label>
+                    <input id="checkbox5" type="checkbox" name="basket">
+                    <label for="checkbox5" class="features-label">Корзина</label>
                   </li>
                 </ul>
             </fieldset>
@@ -161,23 +138,25 @@
           <ul class="catalog-block">
             <li class="catalog-block-list-single">
               <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-sedona1.jpg" width="360" height="576" alt="sedona">
+              <img class="catalog-img" src="img/img-sedona.jpg" width="358" height="574" alt="sedona">
               <div class="catalog-item-block">
-              <a href="#" class="catalog-item">
-               <h3 class="catalog-item-block-title">Sedona</h3>
-              </a>
+                <div class="catalog-block-info">
+              <h3 class="catalog-item-block-title">
+               <a href="#" class="catalog-item">Sedona</a>
+              </h3>
                <p class="catalog-item-block-info">Информационный сайт<br> для туристов</p>
+                 </div>
                <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
               </div>
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-pink1.jpg" width="360" height="576"  alt="pink">
+              <img class="catalog-img" src="img/img-pink.jpg" width="358" height="574"  alt="pink">
               <div class="catalog-item-block">
-              <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">Pink app</h3>
-              </a>  
+              <h3 class="catalog-item-block-title">
+               <a href="#" class="catalog-item">Pink app</a>
+              </h3>  
                 <p class="catalog-item-block-info">Продуктовый лендинг приложения для IOS и Android</p>
                 <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
@@ -185,11 +164,11 @@
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-barbershop1.jpg" width="360" height="576"  alt="barbershop">
+              <img class="catalog-img" src="img/img-barbershop.jpg" width="358" height="574"  alt="barbershop">
               <div class="catalog-item-block">
-              <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">Barbershop</h3>
-              </a>
+              <h3 class="catalog-item-block-title">
+               <a href="#" class="catalog-item">Barbershop</a>
+              </h3>
                 <p class="catalog-item-block-info">Сайт салоны красоты.<br> Для мужчин, да.</p>
                 <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
@@ -197,11 +176,11 @@
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item">
-              <img class="catalog-img" src="img/img-mishka1.jpg" width="360" height="576"  alt="mishka">
+              <img class="catalog-img" src="img/img-mishka.jpg" width="358" height="574"  alt="mishka">
               <div class="catalog-item-block">
-              <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">Mishka</h3>
-              </a>  
+              <h3 class="catalog-item-block-title">
+               <a href="#" class="catalog-item">Mishka</a>
+              </h3> 
                 <p class="catalog-item-block-info">Интернет-магазин<br> вязаных игрушек</p>
                 <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
@@ -209,11 +188,11 @@
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item lower">
-              <img class="catalog-img" src="img/img-aplus1.jpg" width="360" height="576"  alt="a">
+              <img class="catalog-img" src="img/img-aplus.jpg" width="358" height="574"  alt="a">
               <div class="catalog-item-block lower">
-              <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">A plus</h3>
-              </a>
+              <h3 class="catalog-item-block-title">
+               <a href="#" class="catalog-item">A plus</a>
+              </h3>
                 <p class="catalog-item-block-info">Лендинг курсов повышения квалификации</p>
                 <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
@@ -221,11 +200,11 @@
             </li>
             <li class="catalog-block-list-single">
             <div class="catalog-block-item lower">
-              <img class="catalog-img" src="img/img-kvast1.jpg" width="360" height="576"  alt="Кваст">
+              <img class="catalog-img" src="img/img-kvast.jpg" width="358" height="574"  alt="Кваст">
               <div class="catalog-item-block lower">
-              <a href="#" class="catalog-item">
-                <h3 class="catalog-item-block-title">Кваст</h3>
-              </a>  
+              <h3 class="catalog-item-block-title">
+               <a href="#" class="catalog-item">Кваст</a>
+              </h3> 
                 <p class="catalog-item-block-info">Промо-сайт производителся крафтового кваса</p>
                 <button type="submit" class="btn catalog-item-block-btn">9 900 руб.</button>
               </div>
@@ -254,9 +233,9 @@
       </div>      	
     </main>
        <footer class="main-footer">
-       <div class="map-block">
+       <div class="map-block catalog">
        <img class="map-img catalog" src="img/map.png" width="1440" height="416" alt="Карта">
-       <img class="map-img-2 catalog" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+      <div  class="map1" id="map"></div>
        <div class="map-container">
          <div class="contacts catalog">
            <h3 class="contacts-title">Nёrds design studio</h3>
@@ -268,10 +247,12 @@
        </div>
        <div class="container">
          <div class="bottom-footer catalog">
-           <div class="bottom-footer-left">
-             <a href="#" class="footer-btn footer-btn-vk">vk</a>
-             <a href="#" class="footer-btn footer-btn-fb">fb</a>
-             <a href="#" class="footer-btn footer-btn-inst">inst</a>
+           <div class="bottom-footer-left catalog">
+             <a href="#" class="catalog footer-btn footer-btn-vk">vk
+             </a>
+             <a href="#" class="catalog footer-btn footer-btn-fb">fb
+             </a>
+             <a href="#" class="catalog footer-btn footer-btn-inst">inst</a>
            </div>
            <div class="bottom-footer-right">
              <p class="bottom-footer-right-name">Давайте дружить, это выгодно!
@@ -287,14 +268,14 @@
            <div class="footer-form-column">
              <div class="footer-form-column-left">
                <label for="feedback-login" class="feedback-login-label">Ваше имя:</label>
-               <input class="feedback-login-input" type="text" name="login" id="feedback-login"  placeholder="Представьтесь, пожалуйста" required>
+               <input class="feedback-login-input" type="text" name="login" id="feedback-login"  placeholder="Представьтесь, пожалуйста">
              </div>
              <div class="footer-form-column-right">
-               <label class="feedback-email-label">Ваш e-mail:<input class="feedback-email-input" type="text" name="email" placeholder="Для отправки ответа" required></label>
+               <label class="feedback-email-label">Ваш e-mail:<input class="feedback-email-input" type="text" name="email" placeholder="Для отправки ответа"></label>
              </div>
            </div>
            <div class="feedback-letter">
-             <label class="feedback-letter-label">Текст письма:<textarea class="feedback-letter-textarea" name="text" rows="6" placeholder="В свободной форме" required></textarea></label>
+             <label class="feedback-letter-label">Текст письма:<textarea class="feedback-letter-textarea" name="text" rows="6" placeholder="В свободной форме"></textarea></label>
            </div>
              <div class="feedback-btn">
              <button type="submit" class="btn feedback-btn-btn">Отправить</button>
@@ -303,5 +284,8 @@
         <button type="submit" class="btn feedback-cancel-btn">Закрыть форму
         </button>
      </div>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
