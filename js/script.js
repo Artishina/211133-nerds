@@ -10,38 +10,38 @@
     evt.preventDefault();
     popup.classList.add("feedback-show");
     if (storage) {
-        login.value = storage;
-        email.focus();
-        } else {
-          login.focus();
-        }
-       });
+    login.value = storage;
+    email.focus();
+    } else {
+    login.focus();
+    }
+  });
 
-       close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("feedback-show");
-        popup.classList.remove("feedback-error"); 
-       });
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("feedback-show");
+    popup.classList.remove("feedback-error"); 
+  });
 
-       form.addEventListener("submit", function (evt) {
-        if (!login.value || !email.value) {
-        evt.preventDefault();
-        popup.classList.remove("feedback-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("feedback-error"); 
-        } else {
-          localStorage.setItem("login", login.value);
-        }
-       });
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value) {
+    evt.preventDefault();
+    popup.classList.remove("feedback-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("feedback-error"); 
+    } else {
+    localStorage.setItem("login", login.value);
+    }
+  });
 
-       window.addEventListener("keydown", function(evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("feedback-show")) {
-            popup.classList.remove("feedback-show");
-            popup.classList.remove("feedback-error"); 
-          }
-        }
-      });
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+    if (popup.classList.contains("feedback-show")) {
+    popup.classList.remove("feedback-show");
+    popup.classList.remove("feedback-error"); 
+    }
+    }
+  });
 
 // map
 
@@ -56,20 +56,20 @@
 
 var mapElement = document.getElementById("map");
 var image1 = new google.maps.MarkerImage(
-    "img/map-marker.png",
-    new google.maps.Size(231,190), 
-    new google.maps.Point(0,0), 
-    new google.maps.Point(50,180) 
-  );
+  "img/map-marker.png",
+  new google.maps.Size(231,190), 
+  new google.maps.Point(0,0), 
+  new google.maps.Point(50,180) 
+);
 
 var map = new google.maps.Map(mapElement, mapOptions);
 var marker1 = new google.maps.Marker({
-    draggable: true, 
-    raiseOnDrag: false, 
-    position: new google.maps.LatLng(59.9387942, 30.323083300000008), 
-    icon: image1, 
-    map: map,
-  });
+  draggable: true, 
+  raiseOnDrag: false, 
+  position: new google.maps.LatLng(59.9387942, 30.323083300000008), 
+  icon: image1, 
+  map: map,
+});
 }
 
 
