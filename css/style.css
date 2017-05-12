@@ -510,7 +510,13 @@ body {
 }
 
 .info-column-right li {
+  width: 97.41px;
   margin-right: 22px;
+}
+
+.info-column-right li:last-child {
+  width: 106.89px;
+  margin-right: 0;
 }
 
 .info-column-right-list {
@@ -662,15 +668,22 @@ body {
 
 .map-block {
   position: relative;
+}
+
+.map-img-wrapper {
+  position: absolute;
+  width: 100%;
+  
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
 
   background-color: #e9e5dc;
 }
 
 .map-img {
-  position: absolute;
-  margin-left: -720px;
-
-  left: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .contacts {
@@ -836,21 +849,19 @@ body {
   line-height: 22px;
 }
 
-
-
 .feedback {
   position: fixed;
   display: none;
   width: 790px;
   margin-top: -295px;
-  margin-left: -298px;
+  margin-left: -480px;
   padding-top: 20px;
   padding-right: 90px;
   padding-bottom: 50px;
   padding-left: 80px;
 
   top: 50%;
-  left: 770px;
+  left: 50%;
  
   background-color: #ffffff;
   -webkit-box-shadow:
@@ -1665,7 +1676,7 @@ input[type="checkbox"]:disabled  + .features-label:hover::before {
 }
 
 .catalog-block-info {
-  max-height: 200px; 
+  max-height: 452px; 
 
   overflow: hidden;
 }
@@ -1684,7 +1695,6 @@ input[type="checkbox"]:disabled  + .features-label:hover::before {
   display: none;
   bottom:0px;
   width: 100%;
-  height: 230px;
   
   text-align: center;
   
@@ -1737,13 +1747,11 @@ input[type="checkbox"]:disabled  + .features-label:hover::before {
 } 
 
 .catalog-item-block-btn {
-  position: absolute;
   width: 200px;
+  margin-top: 30px;
+  margin-bottom: 42px;
   padding-top: 16px;
   padding-bottom: 16px;
-  
-  top: 138px;
-  left: 79px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1774,9 +1782,9 @@ input[type="checkbox"]:disabled  + .features-label:hover::before {
  }
 
 .catalog-item-block a {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -1806,13 +1814,6 @@ input[type="checkbox"]:disabled  + .features-label:hover::before {
 
 .map-block.catalog {
   margin-top:-7px;
-}
-
-.map-img.catalog {
-  position: absolute;
-  margin-left: -720px;
-
-  left: 50%;
 }
 
 .contacts.catalog {

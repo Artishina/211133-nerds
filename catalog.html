@@ -5,8 +5,7 @@
 	  <title>Магазин</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header-catalog">
@@ -243,7 +242,9 @@
     </main>
        <footer class="main-footer">
        <div class="map-block catalog">
-       <img class="map-img catalog" src="img/map.png" width="1440" height="416" alt="Карта">
+         <div class="map-img-wrapper">
+           <img class="map-img catalog" src="img/map.png" width="1440" height="416" alt="Карта">
+         </div>
       <div  class="map1" id="map"></div>
        <div class="map-container">
          <div class="contacts catalog">
@@ -294,7 +295,6 @@
         </button>
      </div>
      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
